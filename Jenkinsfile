@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("printing"){
       steps{
-       echo "hello I am Just priting for testing" 
+       echo "hello I am Just printing for testing" 
       }
     }
   }
