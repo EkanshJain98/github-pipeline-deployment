@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("printing"){
       steps{
-       echo "hello I am Just printing for testing" 
+       sh "kubectl apply -f deploy.yml --kubeconfig /arth-ws/admin.conf"
       }
     }
   }
