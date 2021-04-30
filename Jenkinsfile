@@ -1,10 +1,13 @@
 pipeline{
+ parameters{
+  booleanParam(name: 'istrue', defaultValue: true, description: 'This is boolean type')
+ }
  agent any
   stages{
     stage("printing"){
      when{
       expression{
-       false
+       params.istrue
       }     }
       steps{
        echo "hello" 
