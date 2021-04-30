@@ -10,7 +10,8 @@ pipeline{
        params.istrue
       }     }
       steps{
-       echo "hello" 
+      // echo "hello"
+       sh "date1"
        //kubernetesDeploy(configs: "deploy.yml", kubeconfigId: "kubeconfigfile")
       }
     }
