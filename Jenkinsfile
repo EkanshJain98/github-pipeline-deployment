@@ -3,7 +3,8 @@ pipeline{
   stages{
     stage("printing"){
       steps{
-        kubernetesDeploy(configs: "deploy.yml", kubeconfigId: "kubeconfigfile")
+       echo "hello" 
+       //kubernetesDeploy(configs: "deploy.yml", kubeconfigId: "kubeconfigfile")
       }
     }
   }
