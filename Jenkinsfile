@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("printing"){
       steps{
-       sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf"
+       sh "sudo kubectl apply -f deploy.yml --kubeconfig /admin.conf"
       }
     }
   }
