@@ -4,7 +4,7 @@ pipeline{
     stage("printing"){
      when{
       expression{
-       true
+       false
       }     }
       steps{
        echo "hello" 
